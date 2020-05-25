@@ -10,3 +10,11 @@
 '''
 
 mac = 'AAAA:BBBB:CCCC'
+mac = mac.lower()
+mac = mac.split(':')
+mac = str(mac[0]+mac[1]+mac[2])
+
+#print(bin(int(mac,16)))
+
+print("{0:08b}".format(int(mac,16)))
+
